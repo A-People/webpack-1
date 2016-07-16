@@ -1,12 +1,15 @@
-class Animal {
-    constructor(name) {
-        this.name = name;
-    }
-    sayName() {
-        console.log('My name is '+this.name);
-    }
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+import Button from './Button.js';
+
+
+class App extends Component {
+  render(){
+    return(
+      <div><Button /></div>
+    )
+  }
 }
 
-var animal=new Animal('Peter');
-
-animal.sayName();
+ReactDOM.render(<App/>,document.getElementById('app'));
