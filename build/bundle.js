@@ -82,11 +82,23 @@
 	  }
 
 	  _createClass(App, [{
+	    key: 'getStyles',
+	    value: function getStyles() {
+	      return {
+	        root: {
+	          backgroundColor: 'mistyrose',
+	          height: '300px',
+	          padding: '20px'
+	        }
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var styles = this.getStyles();
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { style: styles.root },
 	        _react2.default.createElement(_Input2.default, null),
 	        _react2.default.createElement(_Button2.default, null)
 	      );

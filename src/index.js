@@ -6,9 +6,20 @@ import Input from './components/Input.js';
 
 
 class App extends Component {
+  getStyles() {
+    return {
+      root: {
+        backgroundColor: 'mistyrose',
+        height: '300px',
+        padding: '20px'
+      }
+    }
+  }
+
   render(){
+    const styles = this.getStyles();
     return(
-      <div>
+      <div style={styles.root}>
         <Input />
         <Button />
       </div>
